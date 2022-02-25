@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../css/public.css">
+  <link rel="stylesheet" href="../css/television.css">
+  <link rel="stylesheet" href="../css/shopping-cart.css">
+  <script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/cart.js"type="text/javascript"charset="utf-8"></script>
+  <script src="../jquery.min.js"></script>
+  <link href="../3.3.6/bootstrap.min.css" rel="stylesheet">
+  <script src="../bootstrap.min.js"></script>
+  <script src="../js/Vue/vue.min.js"></script>
+</head>
+<body>
+<div class="main-body">
+  <nav class="publicdhl">
+    <div class="dhlcontent">
+      <div class="publicdhl-left">
+        <span class="glyphicon glyphicon-home redColor"></span>
+        <a href="../tm-index.html" style="margin-left: 0;">天猫首页</a>
+        <span style="margin-right: 10px;">喵，欢迎来天猫</span>
+        <a href="tm-login.html">请登录</a>
+        <a href="tm-register.html">免费注册</a>
+
+      </div>
+      <div class="publicdhl-right">
+        <span class="tb"><a href="#">我的淘宝</a></span>
+        <ul class="tbb">
+          <li><a href="tm-order.html">已买到的宝贝</a></li>
+          <li><a href="#">已卖出的宝贝</a></li>
+        </ul>
+
+        <span class="glyphicon glyphicon-shopping-cart redColor"></span>
+        <a href="tm-shoppingcart.html" style="margin-right: 4px;">购物车</a>
+        <span class="collection"><a href="#">收藏夹</a></span>
+        <ul class="collect">
+          <li><a href="#">收藏的宝贝</a></li>
+          <li><a href="#">收藏的店铺</a></li>
+        </ul>
+
+        <span class="glyphicon glyphicon-phone redColor phone-button" style="border-left: 1px solid #cccccc;padding-left: 12px;"></span>
+        <a href="#" class="phone-edition">手机版</a>
+        <img src="../img/site/phone.png" class="phone" alt="">
+        <a href="#">淘宝网</a>
+        <a href="#">网页无障碍</a>
+        <span class="sz"><a href="#">商家支持</a></span>
+        <div class="contact">
+          <ul class="contacts">
+            <span class="sz-title">商家:</span><br/><br/>
+            <li style="margin-top: 0;"><a href="#" >商家中心</a></li>
+            <li style="margin-top: 0;"><a href="#" >天猫规则</a></li>
+            <li><a href="#">商家入驻</a></li>
+            <li><a href="#">运营服务</a></li>
+            <li><a href="#">商家品控</a></li>
+            <li><a href="#">商家工具</a></li>
+            <li><a href="#">天猫智库</a></li>
+            <li><a href="#">喵言喵语</a></li>
+          </ul>
+          <ul class="contacts">
+            <span class="sz-title help">帮助:</span><br/><br/>
+            <li style="margin-top: 0;width: 100px;"><a href="#" >商家服务大厅</a></li>
+            <li style="margin-top: 0;"><a href="#" >问商友</a></li>
+          </ul>
+          <br>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+  <div class="logo-search">
+    <a href="../tm-index.html" class="logo"><img src="../img/site/logo.png" style="float: left;" alt=""></a>
+    <div class="search-list">
+      <input type="text" placeholder="   搜索 天猫 商品/品牌/店铺">
+      <button class="search-button">搜索</button>
+      <div class="search-below">
+            <span>
+                <a href="#">平衡车</a>
+            </span>
+        <span>
+                <a href="#">扫地机器人</a>
+            </span>
+        <span>
+                <a href="#">原汁机</a>
+            </span>
+        <span style="border-right: none;">
+                <a href="#">冰箱</a>
+            </span>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<div class="shopping-main" style="background:none;padding-top: 0;">
+  <div class="cart-top">
+    <span>已选商品（不含运费）</span>
+    <span style="color: red;font-size: 15px;">￥</span>
+    <span class="shopping-pay" style="font-size: 15px;">0.00</span>
+    <button class="sum-price" disabled="disabled">结算</button>
+  </div>
+  <div class="cart-content">
+    <div class="cart-title">
+      <div class="cart-title-left">
+<!--        <button class="selected"></button>-->
+        <img src="../img/site/cartNotSelected.png" class="selected" pid="1" selectit="false">
+        <img src="../img/site/cartSelected.png" class="select-all" style="display: none;">
+        <span style="float:left;padding-right: 140px;">全选</span>
+        <span>商品信息</span>
+      </div>
+      <div class="cart-title-right">
+        <span>单价</span>
+        <span>数量</span>
+        <span>金额</span>
+        <span style="padding-right: 52px;">操作</span>
+      </div>
+    </div>
+    <div class="shopping-cart-lists">
+      <div class="shopping-cart-list" pid="123" oiid="998">
+        <img src="../img/site/cartNotSelected.png" class="selected-one" style="padding-top: 42px;" oiid="998" selectit="false">
+        <img src="../img/site/cartSelected.png" class="select-one" pid="123">
+        <div class="list-img">
+          <img src="../img/shopping/television/XM9.jpg">
+        </div>
+        <a href="#"><span class="shopping-cart-title">小米EA65金属全面屏 65英寸4K超高清</span></a>
+        <div class="service-promise-list">
+          <img src="../img/site/creditcard.png" title="支持信用卡支付">
+          <img src="../img/site/7day.png" title="消费者保障服务，支持7天无理由退款">
+          <img src="../img/site/promise.png" title="消费者保障服务，承诺如实所述">
+        </div>
+        <span style="margin-top: 50px;text-decoration: line-through;color: grey;font-weight: bold;">￥5699</span>
+        <span style="margin-top: 64px;margin-left: -45px;color: red;font-weight: bold;">￥3599</span>
+        <span class="order-Item-stock hidden" pid="123">506</span>
+        <span class="order-Item-price hidden" pid="123">3599</span>
+        <button class="shopping-cart-minus" pid="123">-</button>
+        <input type="text" value="1" style="float:left;" class="shopping-cart-number" pid="123" oiid="998">
+        <button class="shopping-cart-add" pid="123">+</button>
+        <span style="margin-top: 56px;margin-left: 20px;color: red;font-weight: bold;">￥</span>
+        <span class="shopping-price" pid="123" oiid="998">3599</span>
+        <a href="#" class="shopping-cart-delete" oiid="998"><span>删除</span></a>
+      </div>
+      <div class="shopping-cart-list" pid="124" oiid="999">
+        <img src="../img/site/cartNotSelected.png" class="selected-one"  style="padding-top: 42px;" oiid="999" selectit="false">
+        <img src="../img/site/cartSelected.png" class="select-one" pid="124">
+        <div class="list-img">
+          <img src="../img/shopping/hotwater/HE1.jpg">
+        </div>
+        <a href="#"><span class="shopping-cart-title">海尔电热水器家用洗澡速热储水式节能租房40/50/80升ES40H-C5(CE)</span></a>
+        <div class="service-promise-list">
+          <img src="../img/site/creditcard.png" title="支持信用卡支付">
+          <img src="../img/site/7day.png" title="消费者保障服务，支持7天无理由退款">
+          <img src="../img/site/promise.png" title="消费者保障服务，承诺如实所述">
+        </div>
+        <span style="margin-top: 50px;text-decoration: line-through;color: grey;font-weight: bold;">￥1299</span>
+        <span style="margin-top: 64px;margin-left: -45px;color: red;font-weight: bold;">￥1049</span>
+        <span class="order-Item-stock hidden" pid="124">100</span>
+        <span class="order-Item-price hidden" pid="124">1049</span>
+        <button class="shopping-cart-minus" pid="124">-</button>
+        <input type="text" value="1" style="float:left;" class="shopping-cart-number" pid="124" oiid="999">
+        <button class="shopping-cart-add" pid="124">+</button>
+        <span style="margin-top: 56px;margin-left: 20px;color: red;font-weight: bold;">￥</span>
+        <span class="shopping-price" pid="124" oiid="999">1049</span>
+        <a href="#" class="shopping-cart-delete" oiid="999"><span>删除</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="cart-bottom">
+    <img src="../img/site/cartNotSelected.png" class="selected" pid="1" selectit="false">
+    <!--<img src="../img/site/cartSelected.png"class="select-all2"style="display: none;">-->
+    <span style="float:left;">全选</span>
+    <div class="jiesuan">
+      <span>已选商品</span>
+      <span class="shopping-number">0</span>
+      <span>件</span>
+      <span>合计（不含运费）:</span>
+      <span style="color: red;font-size: 20px;">￥</span>
+      <span class="shopping-pay">0.00</span>
+      <button class="sum-price" disabled="disabled">结算</button>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div class="foot1">
+    <div class="foot1-one"><a href="#"><img src="../img/site/ensure.png"></a>
+
+    </div>
+
+  </div>
+  <div class="foot2">
+        <span>购物指南
+        <ul>
+            <li><a href="#">免费注册</a></li>
+            <li><a href="#">开通支付宝</a></li>
+            <li><a href="#">支付宝充值</a></li>
+            </ul>
+        </span>
+    <span>天猫保障
+        <ul>
+            <li><a href="#">发票保障</a></li>
+            <li><a href="#">售后规则</a></li>
+            <li><a href="#">缺货赔付</a></li>
+            </ul>
+        </span>
+    <span>支付方式
+            <ul>
+                <li><a href="#">快捷支付</a></li>
+                <li><a href="#">信用卡</a></li>
+                <li><a href="#">蚂蚁花呗</a></li>
+                <li><a href="#">货到付款</a></li>
+                </ul>
+        </span>
+    <span>商家服务
+        <ul>
+            <li><a href="#">商家入驻</a></li>
+            <li><a href="#">商家中心</a></li>
+            <li><a href="#">天猫智库</a></li>
+            <li><a href="#">天猫规则</a></li>
+            <li><a href="#">物流服务</a></li>
+            <li><a href="#">喵言喵语</a></li>
+            <li><a href="#">运营服务</a></li>
+            </ul>
+        </span>
+    <span style="margin: 0;">手机天猫
+            <a href="#"><img src="../img/site/ma.png"></a>
+        </span>
+  </div>
+  <div style="width:1100px;margin: 0 auto;">
+    <img src="../img/site/cateye.png">
+  </div>
+
+  <div class="foot3">
+    <div class="foot3-one">
+      <a href="#">关于天猫</a>
+      <a href="#">商家服务大厅</a>
+      <a href="#">开放平台</a>
+      <a href="#">诚聘英才</a>
+      <a href="#">联系我们</a>
+      <a href="#">网站合作</a>
+      <a href="#">法律声明</a>
+      <a href="#">隐私权政策</a>
+      <a href="#">知识产权</a>
+      <a href="#">廉正举报</a>
+      <a href="#">不当竞争举报</a>
+    </div>
+    <div class="foot3-two">
+      <a href="#" style="padding-left: 0;">阿里巴巴集团</a>
+      <a href="#">淘宝网</a>
+      <a href="#">天猫</a>
+      <a href="#">聚划算</a>
+      <a href="#">全球速卖通</a>
+      <a href="#">阿里巴巴国际交易市场</a>
+      <a href="#">1688</a>
+      <a href="#">阿里妈妈</a>
+      <a href="#">飞猪</a>
+      <a href="#">阿里云计算</a>
+      <a href="#">AliOS</a>
+      <a href="#">阿里通信</a>
+      <a href="#">万网</a>
+      <a href="#">高德</a>
+      <a href="#">UC</a>
+      <a href="#">友盟</a>
+      <a href="#">虾米</a>
+      <a href="#">钉钉</a>
+      <a href="#">支付宝</a>
+      <a href="#" style="border-right: none;">阿里安全</a>
+    </div>
+    <div class="foot3-three">
+      <a href="#">增值电信业务经营许可证：浙B2-20110446</a>
+      <span>市场名称登记证：工商网市字3301004119号</span>
+      <span>出版物网络交易平台服务经营备案证： 新出发浙备字第2019002号</span>
+    </div>
+    <div class="foot3-four">
+      <span style="padding-right: 70px;">互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span>
+      <span>互联网药品信息服务资质证书编号：<a href="#">浙-（经营性）-2017-0005</a></span>
+      <a href="#"><img src="../img/site/beian.png">浙公网安备 33010002000120号</a>
+    </div>
+    <div class="foot3-five">
+      <span>医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span>
+    </div>
+    <div class="foot3-six">
+      <span style="padding-right: 70px;">浙江省网络食品销售第三方平台提供者备案：浙网食A33010002</span>
+      <a href="#">12318举报</a>
+      <a href="#">浙B2-20110446-1</a>
+    </div>
+    <div class="foot3-seven">
+      <span>&copy2003-现在 TMALL.COM 版权所有</span>
+    </div>
+  </div>
+  <div class="foot4">
+
+  </div>
+
+</footer>
+</body>
+<script>
+  topshow();
+  cart();
+/*
+  function sumprice(pid){
+    $('.shopping-price[pid='+pid+']').html();
+  }
+  $(function (){
+
+    $('.selected').click(function (){
+      var pid=$(this).attr('pid');
+      $('.select-one[pid='+pid+']').addClass('selected-one');
+      $('.sum-price').addClass('sum-price-change');
+      /!*if()*!/
+      var sumprice=0;
+      if($('.select-one[pid=123]').hasClass('selected-one')){
+        sumprice=Number($('.shopping-price[pid=123]').html());
+      }else if($('.select-one[pid=124]').hasClass('selected-one')){
+        sumprice=Number($('.shopping-price[pid=124]').html());
+      }else if($('.select-one[pid=123]').hasClass('selected-one')&&$('.select-one[pid=124]').hasClass('selected-one')){
+        sumprice=Number($('.shopping-price[pid=123]').html())+Number($('.shopping-price[pid=124]').html());
+      }
+      /!*var sumprice=0;
+      $('.select-one[pid='+pid+']').each(function (){
+        var pid=$(this).attr('pid');
+        var price=Number($('.shopping-price[pid='+pid+']').html());
+        sumprice+=new Number(price);
+        console.log(sumprice);
+      });*!/
+
+      /!*var price=Number($('.shopping-price[pid]').html());*!/
+      $('.shopping-cart-list[pid='+pid+']').css('background-color','#fffbd6');
+      $('.sum-price').addClass('sum-price-change');
+      $('.shopping-pay').html(sumprice);
+    });
+    $('.selected[pid=1]').click(function (){
+
+      $('.select-one,.select-all2,.select-all').show();
+      $('.shopping-cart-list').css('background-color','#fffbd6');
+      $('.sum-price').addClass('sum-price-change');
+
+      var price=Number($('.shopping-price[pid=123]').html())+Number($('.shopping-price[pid=124]').html());
+
+      $('.shopping-pay').html(price);
+    });
+    $('.select-all,.select-all2').click(function (){
+      $('.select-one,.select-all2,.select-all').hide();
+      $('.shopping-cart-list').css('background-color','white');
+      $('.sum-price').removeClass('sum-price-change');
+      $('.shopping-pay').html('0.00');
+    });
+    $('.select-one').click(function (){
+      var pid=$(this).attr('pid');
+      $('.select-one[pid='+pid+']').removeClass('selected-one');
+      $('.shopping-cart-list[pid='+pid+']').css('background-color','white');
+      $('.sum-price').removeClass('sum-price-change');
+    });
+  });
+  function numberadd(pid){
+    /!*var pid=$(this).attr('pid');*!/
+
+    var price=$('.order-Item-price[pid='+pid+']').html();
+    var value=$('.shopping-cart-number[pid='+pid+']').val();
+    var restore=$('.order-Item-stock[pid='+pid+']').html();
+
+    value++;
+    if(value>restore){
+      value=restore;
+      this.value=restore;
+      alert('不能超过最大库存量！');
+    }
+
+    value=Number(value);
+    price=price*value;
+    $('.shopping-price[pid='+pid+']').html(price);
+    $('.shopping-cart-number[pid='+pid+']').val(value);
+    var sumprice=Number($('.shopping-price[pid=123]').html())+Number($('.shopping-price[pid=124]').html());
+    $('.shopping-pay').html(sumprice);
+  }
+  //数量减少
+  function numberminus(pid){
+    /!*var pid=$(this).attr('pid');*!/
+    var value=$('.shopping-cart-number[pid='+pid+']').val();
+    var price=$('.order-Item-price[pid='+pid+']').html();
+
+    if(value>1){
+      value--;
+    }
+    if(value==0){
+      value=1;
+    }
+    value=Number(value);
+    price=price*value;
+    $('.shopping-price[pid='+pid+']').html(price);
+    $('.shopping-cart-number[pid='+pid+']').val(value);
+    var sumprice=Number($('.shopping-price[pid=123]').html())+Number($('.shopping-price[pid=124]').html());
+    $('.shopping-pay').html(sumprice);
+    /!*$('.input-number').attr('value',value);*!/
+  }
+  $(function (){
+    $('.shopping-cart-minus').click(function (){
+      var pid=$(this).attr('pid');
+
+      numberminus(pid);
+    });
+    $('.shopping-cart-add').click(function (){
+      var pid=$(this).attr('pid');
+      numberadd(pid);
+
+    });
+  });
+
+
+  $(function (){
+
+    //正在输入
+    $('.shopping-cart-number').focus(function (){
+      this.value=this.value.replace(/[^\d]/g,'');
+      //键盘弹起，如果输入的数量超过库存，马上将输入的值改为最大库存,弹出警告框
+      $('.shopping-cart-number').keyup(function (){
+        var pid=$(this).attr('pid');
+        var value=$('.shopping-cart-number[pid='+pid+']').val();
+        this.value=this.value.replace(/[^\d]/g,'');
+        value=Number(value);
+
+        var restore=$('.order-Item-stock[pid='+pid+']').html();
+        console.log(restore);
+        if(value>restore){
+          value=restore;
+          this.value=restore;
+          alert('不能超过最大库存量！');
+        };
+        var price=$('.order-Item-price[pid='+pid+']').html();
+        price=price*value;
+        $('.shopping-price[pid='+pid+']').html(price);
+      });
+    });
+
+    //失去焦点,利用正则表达式使输入的值合法，如果值为0或者空，使其等于1
+    $('.shopping-cart-number').blur(function (){
+      this.value=this.value.replace(/[^\d]/g,'');
+      var value=this.value;
+      if(this.value==0){
+        this.value=1;
+        value=this.value;
+      };
+
+    });
+  });
+*/
+</script>
+</html>

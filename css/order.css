@@ -1,0 +1,141 @@
+.order-title{
+    width: 1190px;
+    height: 41px;
+    border-bottom: 2px solid lightgrey;
+    margin-bottom: 20px;
+}
+.order-title span{
+    float: left;
+    /*width: 100px;*/
+    height: 32px;
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: bold;
+    border-right: 1px solid lightgrey;
+    /*margin-left: 27px;*/
+    padding-left: 23px;
+    /*padding-bottom: 17px;*/
+    padding-right: 22px;
+    margin-top: 10px;
+    /*border-bottom: 3px solid red;*/
+}
+.order-title-hover{
+    color: red;
+    border-bottom: 3px solid red;
+}
+.order-top{
+    background-color: #f5f5f5;
+    width: 1190px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+.order-top span{
+    float: left;
+    margin-right: 100px;
+}
+.order-top span:first-child{
+    margin-left: 327px;
+    margin-right: 327px;
+}
+.wangwang{
+    background: url("../img/site/wangwang.gif")130px 58px;
+    width: 74px;
+    height: 20px;
+    position: absolute;
+    /*display: block;*/
+    /*float: left;*/
+    margin-left: 186px;
+    margin-top: 15px;
+}
+.order-content{
+    border: 1px solid lightgrey;
+    width: 1190px;
+    height: 160px;
+    margin-bottom: 15px;
+}
+.order-content-title{
+    height: 50px;
+    background-color: #f5f5f5;
+    line-height: 50px;
+    position: relative;
+}
+.order-content-title span{
+    display: inline-block;
+}
+.order-content-title span:first-child{
+    margin-left: 17px;
+}
+.order-content-title span:nth-child(3){
+    margin-left: 304px;
+}
+.order-content-title span:nth-child(5){
+    margin-left: 409px;
+}
+.order-content .list-img{
+    border: none;
+    margin-top: 9px;
+}
+.order-content-list{
+    height: 110px;
+}
+.order-content-list span{
+    float: left;
+    border-right: 1px solid lightgrey;
+}
+.order-content-list .shopping-cart-title{
+    margin-top: 12px;
+    width: 488px;
+}
+.order-content-list .service-promise-list{
+    left: 183px;
+}
+.order-number{
+    width: 141px;
+    height: 109px;
+    line-height: 109px;
+    padding-left: 66px;
+}
+.order-content-list .shopping-price{
+    width: 140px;
+    height: 109px;
+    line-height: 109px;
+    margin-top: 0;
+    padding-left: 45px;
+}
+.order-button-pj{
+    border: 1px solid lightgrey;
+    outline: none;
+    background-color: #fff;
+    margin-left: 49px;
+    margin-top: 24px;
+    width: 50px;
+    height: 30px;
+}
+.order-button-pay{
+    margin-left: 49px;
+    margin-top: 24px;
+    width: 50px;
+    height: 30px;
+}
+.order-dfh{
+    margin-left: 49px;
+    margin-top: 24px;
+}
+.order-button-confirm{
+    margin-left: 36px;
+    margin-top: 24px;
+    width: 80px;
+    height: 30px;
+}
+.order-button-pj:hover{
+    color: red;
+    border: 1px solid red;
+}
+.order-title span:hover{
+    color: red;
+    cursor: pointer;
+}
+.order-content:hover{
+    border: 1px solid black;
+}

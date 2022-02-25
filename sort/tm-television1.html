@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../css/public.css">
+  <link rel="stylesheet" href="../css/television.css">
+  <script src="../js/public.js"type="text/javascript"charset="utf-8"></script>
+  <script src="../js/details.js"type="text/javascript"charset="utf-8"></script>
+  <script src="../jquery.min.js"></script>
+  <link href="../3.3.6/bootstrap.min.css" rel="stylesheet">
+  <script src="../bootstrap.min.js"></script>
+  <script src="../js/Vue/vue.min.js"></script>
+</head>
+<body>
+<div class="main-body">
+  <nav class="publicdhl">
+    <div class="dhlcontent">
+      <div class="publicdhl-left">
+        <span class="glyphicon glyphicon-home redColor"></span>
+        <a href="../tm-index.html" style="margin-left: 0;">天猫首页</a>
+        <span style="margin-right: 10px;">喵，欢迎来天猫</span>
+        <a href="tm-login.html">请登录</a>
+        <a href="tm-register.html">免费注册</a>
+
+      </div>
+      <div class="publicdhl-right">
+        <span class="tb"><a href="#">我的淘宝</a></span>
+        <ul class="tbb">
+          <li><a href="tm-order.html">已买到的宝贝</a></li>
+          <li><a href="#">已卖出的宝贝</a></li>
+        </ul>
+
+        <span class="glyphicon glyphicon-shopping-cart redColor"></span>
+        <a href="tm-shoppingcart.html" style="margin-right: 4px;">购物车</a>
+        <span class="collection"><a href="#">收藏夹</a></span>
+        <ul class="collect">
+          <li><a href="#">收藏的宝贝</a></li>
+          <li><a href="#">收藏的店铺</a></li>
+        </ul>
+
+        <span class="glyphicon glyphicon-phone redColor phone-button" style="border-left: 1px solid #cccccc;padding-left: 12px;"></span>
+        <a href="#" class="phone-edition">手机版</a>
+        <img src="../img/site/phone.png" class="phone">
+        <a href="#">淘宝网</a>
+        <a href="#">网页无障碍</a>
+        <span class="sz"><a href="#">商家支持</a></span>
+        <div class="contact">
+          <ul class="contacts">
+            <span class="sz-title">商家:</span><br/><br/>
+            <li style="margin-top: 0;"><a href="#" >商家中心</a></li>
+            <li style="margin-top: 0;"><a href="#" >天猫规则</a></li>
+            <li><a href="#">商家入驻</a></li>
+            <li><a href="#">运营服务</a></li>
+            <li><a href="#">商家品控</a></li>
+            <li><a href="#">商家工具</a></li>
+            <li><a href="#">天猫智库</a></li>
+            <li><a href="#">喵言喵语</a></li>
+          </ul>
+          <ul class="contacts">
+            <span class="sz-title help">帮助:</span><br/><br/>
+            <li style="margin-top: 0;width: 100px;"><a href="#" >商家服务大厅</a></li>
+            <li style="margin-top: 0;"><a href="#" >问商友</a></li>
+          </ul>
+          <br>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+  <div class="logo-search">
+    <a href="../tm-index.html" class="logo"><img src="../img/site/logo.png" style="float: left;" alt=""></a>
+    <div class="search-list">
+      <input type="text" placeholder="   搜索 天猫 商品/品牌/店铺">
+      <button class="search-button">搜索</button>
+      <div class="search-below">
+            <span>
+                <a href="#">平衡车</a>
+            </span>
+        <span>
+                <a href="#">扫地机器人</a>
+            </span>
+        <span>
+                <a href="#">原汁机</a>
+            </span>
+        <span style="border-right: none;">
+                <a href="#">冰箱</a>
+            </span>
+      </div>
+
+    </div>
+
+  </div>
+  <img src="../img/topimg/television.jpg" class="top-img" style="margin-bottom: 0;">
+  </div>
+
+  <div class="shopping-main" style="background:none;">
+    <div class="imgdisplay">
+        <img src="../img/shopping/television/XM9.jpg" class="imgshow">
+        <div class="magnifier"></div>
+        <div class="magnifierContent">
+            <img src="../img/shopping/television/XM9.jpg" alt="" class="bigImg">
+        </div>
+    </div>
+      <div class="shopping-right">
+          <h4>小米EA65金属全面屏 65英寸4K超高清</h4>
+          <h5 style="color: red;">金属全面屏 远场语音 4K超高清大内存</h5>
+          <h5 style="color: #01a1ff;">承诺送货入户，未履约赔付10000积分</h5>
+          <img src="../img/shopping/BT.png" style="width: 480px;">
+          <img src="../img/shopping/NH.png" class="nhimg"/>
+          <span class="ju">聚</span>
+          <div class="activity">
+              <span style="padding-left: 10px;padding-right: 28px;line-height: 34px;color: grey">价格</span>
+              <span style="color: red;font-size: 30px;"price="3599" class="sale-price">￥3599</span>
+              <div class="divide-sale">
+                  <span class="list-title" style="float:left;font-size: 12px;">分期价</span>
+                  <div class="divide-price">
+                      <span>￥</span>
+                      <span class="divide-pales" period=""></span>
+                      <span>x</span>
+                      <span class="mouth-sale"></span>
+                      <span>期</span>
+                  </div>
+                  <div class="divide-warnig">
+                      <span class="another-sale"></span>
+                  </div>
+              </div>
+              <div class="activityone" cid="1"><span class="list-title">活动一</span><span class="full-minus">满3599元减900元</span><span class="moresale">更多优惠&#9660</span></div>
+              <div class="activity-details" cid="1">
+                  <div class="activityone"><span class="list-title">活动一</span><span class="full-minus">电视EA65 到2022-01-23 23:59:59结束</span><span class="moresale">收起&#9650</span></div>
+                  <ul class="activitys"><li>满3599元 减900元</li></ul>
+              </div>
+              <div class="activityone" cid="2"><span class="list-title">活动二</span><span class="full-minus">满3599元减900元</span><span class="moresale">更多优惠&#9660</span></div>
+              <div class="activity-details" cid="2">
+                  <div class="activityone"><span class="list-title">活动二</span><span class="full-minus">电视EA65 到2022-01-24 00:00:00开始</span><span class="moresale">收起&#9650</span></div>
+                  <ul class="activitys"><li>满3599元 减900元</li></ul>
+              </div>
+              <div class="activityone" cid="3"><span class="list-title">活动三</span><span class="full-minus">满99元,包邮</span><span class="moresale">更多优惠&#9660</span></div>
+              <div class="activity-details" cid="3">
+                  <div class="activityone"><span class="list-title">活动三</span><span class="full-minus">全店满99包邮 到2022-03-01 00:00:00结束</span><span class="moresale">收起&#9650</span></div>
+                  <ul class="activitys"><li>满99元 ,包邮</li></ul>
+              </div>
+
+          </div>
+          <div class="sale-mount">
+              <div><span>月销量</span><span style="margin-left: -12px;color: red;border-right: 1px solid lightgrey;width: 102px;">931</span></div>
+              <div><span style="margin-left: 52px;">累计评价</span><span style="margin-left: 2px;color: red;">41</span></div>
+
+          </div>
+          <div class="shopping-mount">
+              <span style="padding-left: 10px;padding-right: 28px;line-height: 34px;color: grey";>数量</span>
+              <input type="text" value=1 class="input-number">
+              <button onclick="numberadd()">&#9650</button>
+              <button onclick="numberminus()">&#9660</button>
+              <div class="stock"><span>库存</span><span class="restore">506</span><span style="display: block;float:left;">件</span></div>
+              <div class="divide">
+                  <span style="padding-left: 10px;padding-right: 28px;line-height: 34px;color: grey;font-size: 12px;">花呗分期</span>
+                  <span><img src="../img/shopping/HB.png">该商品最高可享3期分期免息</span>
+                  <div class="icon-list"><span class="icon-warning"></span><span><a href="#">登录</a>后确认是否享有该服务</span></div>
+                  <div class="list-divide">
+                      <div class="divide-list" period="3">
+                          <span>￥</span>
+                          <span class="divide-pale" period="3"></span>
+                          <span>x3期</span>
+                          <div class="other-pale">
+                              <span>(</span>
+                              <span style="margin-right: 5px;">0</span>
+                              <span>手续费)</span>
+                          </div>
+                      </div>
+                      <div class="divide-list" period="6" style="left: 186px;">
+                          <span>￥</span>
+                          <span class="divide-pale" period="6"></span>
+                          <span>x6期</span>
+                          <div class="other-pale">
+                              <span style="margin-left: 7px;">(含手续费)</span>
+                          </div>
+                      </div>
+                      <div class="divide-list" period="12" style="left: 306px;">
+                          <span>￥</span>
+                          <span class="divide-pale" period="12"></span>
+                          <span>x12期</span>
+                          <div class="other-pale">
+                              <span style="margin-left: 7px;">(含手续费)</span>
+                          </div>
+                      </div>
+                      <div class="divide-list" period="24" style="left: 67px;top:110px;">
+                          <span>￥</span>
+                          <span class="divide-pale" period="24"></span>
+                          <span>x24期</span>
+                          <div class="other-pale">
+                              <span style="margin-left: 7px;">(含手续费)</span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="button-buy">
+                      <button class="paying"><a href="tm-settle.html" style="color: red;text-decoration: none;">立即购买</a></button>
+                      <div class="shopping-cart">
+                          <button class="joinCart"><span class="glyphicon glyphicon-shopping-cart" style="width: 100px;line-height: 8px;margin-left: 48px;" pid="13">加入购物车</span></button>
+                      </div>
+                  </div>
+              </div>
+              <div class="service-promise">
+                  <span style="padding-left: 10px;padding-right: 28px;line-height: 34px;color: grey";>服务承诺</span>
+                  <span><a href="#">送货入户</a></span>
+                  <span><a href="#">全国联保</a></span>
+                  <span><a href="#">正品保证</a></span>
+                  <span><a href="#">通电验机</a></span>
+                  <span><a href="#">极速退款</a></span>
+                  <span><a href="#">七天无理由退换</a></span>
+              </div>
+
+
+          </div>
+
+
+      </div>
+      <div class="shopping-recommend">
+        <span style="position:absolute;top:-11px;left: 85px;background-color:#fff;color: grey;">看了又看</span>
+          <div id="side-banner" class="carousel slide carousel-vertical" data-ride="carousel">
+              <!--<ol class="carousel-indicators">
+                  <li data-toggle="#side-banner" data-slide-to="0" class="active"></li>
+                  <li data-toggle="#side-banner" data-slide-to="1"></li>
+                  <li data-toggle="#side-banner" data-slide-to="2"></li>
+              </ol>-->
+              <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                      <a href="#"><img src="../img/shopping/television/XM1.jpg" alt=""></a>
+                      <a href="#"><img src="../img/shopping/television/XM2.jpg" alt=""></a>
+                      <a href="#"><img src="../img/shopping/television/XM3.jpg" alt=""></a>
+                  </div>
+                  <div class="item">
+                      <a href="#"><img src="../img/shopping/television/TCL5.jpg" alt=""></a>
+                      <a href="#"><img src="../img/shopping/television/O1CN01OD1vQS29zFr7vURx7_!!1714128138.jpg" alt=""></a>
+                      <a href="#"><img src="../img/shopping/television/XM8.jpg" alt=""></a>
+                  </div>
+                  <div class="item">
+                      <a href="#"><img src="../img/shopping/television/TCL1.jpg" alt=""></a>
+                      <a href="#"><img src="../img/shopping/television/TCL2.jpg" alt=""></a>
+                      <a href="#"><img src="../img/shopping/television/MT9.jpg" alt=""></a>
+                  </div>
+              </div>
+              <a class="left carousel-control" href="#side-banner" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              </a>
+              <a class="right carousel-control" href="#side-banner" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              </a>
+          </div>
+
+      </div>
+      <div class="smallimg">
+      <img src="../img/shopping/television/XM9.jpg" class="smallimglist" bigimgsrc="../img/shopping/television/XM9.jpg">
+      <img src="../img/shopping/television/XM6.jpg" class="smallimglist" bigimgsrc="../img/shopping/television/XM6.jpg">
+      <img src="../img/shopping/television/XM7.jpg" class="smallimglist" bigimgsrc="../img/shopping/television/XM7.jpg">
+      <img src="../img/shopping/television/XM8.jpg" class="smallimglist" bigimgsrc="../img/shopping/television/XM8.jpg">
+      <img src="../img/shopping/television/XM10.jpg" class="smallimglist" bigimgsrc="../img/shopping/television/XM10.jpg">
+    </div>
+      <div class="shopping-buttom">
+          <img src="../img/shopping/JX.jpeg">
+          <div class="bottom-content">
+              <div class="content-title">
+                  <span class="shopping-detalis shopping-hover">商品详情</span>
+                  <a href="#"class="triangle"></a>
+                  <div class="pj">
+                      <span>累计评价</span>
+                      <span class="pj-number"></span>
+                      <a href="#"class="triangle2"></a>
+                  </div>
+
+              </div>
+              <div class="details-shopping">
+                  <div class="canshu">
+                      <span style="padding-left: 22px;float: none;padding-top: 20px;padding-bottom: 40px;">品牌名称：MIUI/小米</span>
+                      <span style="padding-left: 22px;float: none;padding-bottom: 30px;">产品参数：</span>
+                      <span style="padding-left: 22px;">证书编号：2021010808379162</span>
+                      <span>证书状态：有效</span>
+                      <span>产品名称：小米电视</span>
+                      <span style="padding-left: 22px;">3C规格型号：L65M7-EA：220V～，50/...</span>
+                      <span>产品名称：Xiaomi/小米 L65M7-EA</span>
+                      <span>品牌: MIUI/小米</span>
+                      <span style="padding-left: 22px;">型号: L65M7-EA</span>
+                      <span>分辨率: 4K电视</span>
+                      <span>能效等级: 四级</span>
+                      <span style="padding-left: 22px;">操作系统: MIUI for TV</span>
+                      <span>3D类型: 无</span>
+                  </div>
+                  <img src="../img/shopping/FW.png" style="margin-top: 10px;">
+                  <img src="../img/shopping/television/O1CN01FErjJb29zFsNNiAxL_!!1714128138.jpg">
+                  <img src="../img/shopping/television/O1CN01GGrozF29zFtAaqc3v_!!1714128138.jpg">
+                  <img src="../img/shopping/television/O1CN01GGrozF29zFtAaqc3v_!!1714128138.jpg">
+                  <img src="../img/shopping/television/O1CN01HK57ml29zFuzMFJ9l_!!1714128138.jpg">
+              </div>
+
+
+              <div class="pj-content" style="display: none">
+                  <div class="pj-contents">
+                      <span>一直关注小米这个品牌，颜色和价格都值得拥有，看好你，家里电器基本都是小米的</span>
+                      <span>2022-01-25</span>
+                      <span>木***呀</span>
+                      <span>（匿名）</span>
+                  </div>
+                  <div class="pj-contents">
+                      <span>第二次购买了，可以直接连接WiFi看电视，还可以语音控制，用起来很方便。待机时自动播放画报。</span>
+                      <span>2022-01-25</span>
+                      <span>助*带</span>
+                      <span>（匿名）</span>
+                  </div>
+                  <div class="pj-contents">
+                      <span>非常棒：全新正品，画面清晰，画质细腻，色彩明丽，音响层次丰富，动态效果非常好。纤薄的机身和窄边框简洁大方。很称心。我可算是海信的老用户了，从球面管机--到平面管机--再到现在的4K60吋大平板，我都是使用海信的机子，信赖海信的品质。 从购机到安装调试，海信公司全程跟踪服务。客服耐心细致的介绍··发货极快··机子内外包装扎实··物流送货到家··师傅上门仔细安装调试并讲解使用方法··等等，服务非常到位，赞！！！</span>
+                      <span>2022-01-24</span>
+                      <span>z****f</span>
+                      <span>（匿名）</span>
+                  </div>
+                  <div class="pj-contents">
+                      <span>第二次购买了，可以直接连接WiFi看电视，还可以语音控制，用起来很方便。待机时自动播放画报。</span>
+                      <span>2022-01-23</span>
+                      <span>a****f</span>
+                      <span>（匿名）</span>
+                  </div>
+                  <div class="pj-contents">
+                      <span>物流快，师傅人很好。家里只有老人在家，物流师傅主动帮扛上三楼，开机验货。</span>
+                      <span>2022-01-22</span>
+                      <span>a****q</span>
+                      <span>（匿名）</span>
+                  </div>
+              </div>
+          </div>
+      </div>
+        <div class="img4load hidden" ></div>
+  </div>
+        <div style="clear:both"></div>
+  </div>
+<footer>
+  <div class="foot1">
+    <div class="foot1-one"><a href="#"><img src="../img/site/ensure.png"></a>
+
+    </div>
+
+  </div>
+  <div class="foot2">
+        <span>购物指南
+        <ul>
+            <li><a href="#">免费注册</a></li>
+            <li><a href="#">开通支付宝</a></li>
+            <li><a href="#">支付宝充值</a></li>
+            </ul>
+        </span>
+    <span>天猫保障
+        <ul>
+            <li><a href="#">发票保障</a></li>
+            <li><a href="#">售后规则</a></li>
+            <li><a href="#">缺货赔付</a></li>
+            </ul>
+        </span>
+    <span>支付方式
+            <ul>
+                <li><a href="#">快捷支付</a></li>
+                <li><a href="#">信用卡</a></li>
+                <li><a href="#">蚂蚁花呗</a></li>
+                <li><a href="#">货到付款</a></li>
+                </ul>
+        </span>
+    <span>商家服务
+        <ul>
+            <li><a href="#">商家入驻</a></li>
+            <li><a href="#">商家中心</a></li>
+            <li><a href="#">天猫智库</a></li>
+            <li><a href="#">天猫规则</a></li>
+            <li><a href="#">物流服务</a></li>
+            <li><a href="#">喵言喵语</a></li>
+            <li><a href="#">运营服务</a></li>
+            </ul>
+        </span>
+    <span style="margin: 0;">手机天猫
+            <a href="#"><img src="../img/site/ma.png"></a>
+        </span>
+  </div>
+  <div style="width:1100px;margin: 0 auto;">
+    <img src="../img/site/cateye.png">
+  </div>
+
+  <div class="foot3">
+    <div class="foot3-one">
+      <a href="#">关于天猫</a>
+      <a href="#">商家服务大厅</a>
+      <a href="#">开放平台</a>
+      <a href="#">诚聘英才</a>
+      <a href="#">联系我们</a>
+      <a href="#">网站合作</a>
+      <a href="#">法律声明</a>
+      <a href="#">隐私权政策</a>
+      <a href="#">知识产权</a>
+      <a href="#">廉正举报</a>
+      <a href="#">不当竞争举报</a>
+    </div>
+    <div class="foot3-two">
+      <a href="#" style="padding-left: 0;">阿里巴巴集团</a>
+      <a href="#">淘宝网</a>
+      <a href="#">天猫</a>
+      <a href="#">聚划算</a>
+      <a href="#">全球速卖通</a>
+      <a href="#">阿里巴巴国际交易市场</a>
+      <a href="#">1688</a>
+      <a href="#">阿里妈妈</a>
+      <a href="#">飞猪</a>
+      <a href="#">阿里云计算</a>
+      <a href="#">AliOS</a>
+      <a href="#">阿里通信</a>
+      <a href="#">万网</a>
+      <a href="#">高德</a>
+      <a href="#">UC</a>
+      <a href="#">友盟</a>
+      <a href="#">虾米</a>
+      <a href="#">钉钉</a>
+      <a href="#">支付宝</a>
+      <a href="#" style="border-right: none;">阿里安全</a>
+    </div>
+    <div class="foot3-three">
+      <a href="#">增值电信业务经营许可证：浙B2-20110446</a>
+      <span>市场名称登记证：工商网市字3301004119号</span>
+      <span>出版物网络交易平台服务经营备案证： 新出发浙备字第2019002号</span>
+    </div>
+    <div class="foot3-four">
+      <span style="padding-right: 70px;">互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span>
+      <span>互联网药品信息服务资质证书编号：<a href="#">浙-（经营性）-2017-0005</a></span>
+      <a href="#"><img src="../img/site/beian.png">浙公网安备 33010002000120号</a>
+    </div>
+    <div class="foot3-five">
+      <span>医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span>
+    </div>
+    <div class="foot3-six">
+      <span style="padding-right: 70px;">浙江省网络食品销售第三方平台提供者备案：浙网食A33010002</span>
+      <a href="#">12318举报</a>
+      <a href="#">浙B2-20110446-1</a>
+    </div>
+    <div class="foot3-seven">
+      <span>&copy2003-现在 TMALL.COM 版权所有</span>
+    </div>
+  </div>
+  <div class="foot4">
+
+  </div>
+
+</footer>
+</body>
+<script>
+
+    details();
+    topshow();
+</script>
+</html>

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../css/public.css">
+  <link rel="stylesheet" href="../css/television.css">
+  <script src="../js/public.js"type="text/javascript"charset="utf-8"></script>
+  <script src="../js/details.js" type="text/javascript" charSet="utf-8"></script>
+  <script src="../jquery.min.js"></script>
+  <link href="../3.3.6/bootstrap.min.css" rel="stylesheet">
+  <script src="../bootstrap.min.js"></script>
+  <script src="../js/Vue/vue.min.js"></script>
+</head>
+<body>
+<div class="main-body">
+  <nav class="publicdhl">
+    <div class="dhlcontent">
+      <div class="publicdhl-left">
+        <span class="glyphicon glyphicon-home redColor"></span>
+        <a href="../tm-index.html" style="margin-left: 0;">天猫首页</a>
+        <span style="margin-right: 10px;">喵，欢迎来天猫</span>
+        <a href="tm-login.html">请登录</a>
+        <a href="tm-register.html">免费注册</a>
+
+      </div>
+      <div class="publicdhl-right">
+        <span class="tb"><a href="#">我的淘宝</a></span>
+        <ul class="tbb">
+          <li><a href="tm-order.html">已买到的宝贝</a></li>
+          <li><a href="#">已卖出的宝贝</a></li>
+        </ul>
+
+        <span class="glyphicon glyphicon-shopping-cart redColor"></span>
+        <a href="tm-shoppingcart.html" style="margin-right: 4px;">购物车</a>
+        <span class="collection"><a href="#">收藏夹</a></span>
+        <ul class="collect">
+          <li><a href="#">收藏的宝贝</a></li>
+          <li><a href="#">收藏的店铺</a></li>
+        </ul>
+
+        <span class="glyphicon glyphicon-phone redColor phone-button" style="border-left: 1px solid #cccccc;padding-left: 12px;"></span>
+        <a href="#" class="phone-edition">手机版</a>
+        <img src="../img/site/phone.png" class="phone">
+        <a href="#">淘宝网</a>
+        <a href="#">网页无障碍</a>
+        <span class="sz"><a href="#">商家支持</a></span>
+        <div class="contact">
+          <ul class="contacts">
+            <span class="sz-title">商家:</span><br/><br/>
+            <li style="margin-top: 0;"><a href="#" >商家中心</a></li>
+            <li style="margin-top: 0;"><a href="#" >天猫规则</a></li>
+            <li><a href="#">商家入驻</a></li>
+            <li><a href="#">运营服务</a></li>
+            <li><a href="#">商家品控</a></li>
+            <li><a href="#">商家工具</a></li>
+            <li><a href="#">天猫智库</a></li>
+            <li><a href="#">喵言喵语</a></li>
+          </ul>
+          <ul class="contacts">
+            <span class="sz-title help">帮助:</span><br/><br/>
+            <li style="margin-top: 0;width: 100px;"><a href="#" >商家服务大厅</a></li>
+            <li style="margin-top: 0;"><a href="#" >问商友</a></li>
+          </ul>
+          <br>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+  <div class="logo-search">
+    <a href="../tm-index.html" class="logo"><img src="../img/site/logo.png" style="float: left;" alt=""></a>
+    <div class="search-list">
+      <input type="text" placeholder="   搜索 天猫 商品/品牌/店铺">
+      <button class="search-button">搜索</button>
+      <div class="search-below">
+            <span>
+                <a href="#">平衡车</a>
+            </span>
+        <span>
+                <a href="#">扫地机器人</a>
+            </span>
+        <span>
+                <a href="#">原汁机</a>
+            </span>
+        <span style="border-right: none;">
+                <a href="#">冰箱</a>
+            </span>
+      </div>
+
+    </div>
+
+  </div>
+  <img src="../img/topimg/sofa.png" class="top-img" style="margin-bottom: 0;">
+</div>
+
+<div class="shopping-main" style="background:none;">
+  <div class="imgdisplay">
+    <img src="../img/shopping/sofa/GJ1.jpg" class="imgshow">
+    <div class="magnifier"></div>
+    <div class="magnifierContent">
+      <img src="../img/shopping/sofa/GJ1.jpg" alt="" class="bigImg">
+    </div>
+  </div>
+  <div class="shopping-right">
+    <h4>新品顾家家居真皮沙发简约欧式沙发客厅现代轻奢头层牛皮沙发1083</h4>
+    <h5 style="color: red;">273cm升级尺寸 立体腰枕 多功能脚凳</h5>
+    <h5 style="color: #01a1ff;">商家承诺：购买“送货入户并安装”服务，未履行最高可获300元赔付</h5>
+    <img src="../img/shopping/BT.png" style="width: 480px;">
+    <img src="../img/shopping/NH.png" class="nhimg"/>
+    <span class="ju">聚</span>
+    <div class="activity">
+      <span style="padding-left: 10px;padding-right: 28px;line-height: 34px;color: grey">价格</span>
+      <span style="color: red;font-size: 30px;"price="6355" class="sale-price">￥6355</span>
+      <div class="divide-sale">
+        <span class="list-title" style="float:left;font-size: 12px;">分期价</span>
+        <div class="divide-price">
+          <span>￥</span>
+          <span class="divide-pales" period=""></span>
+          <span>x</span>
+          <span class="mouth-sale"></span>
+          <span>期</span>
+        </div>
+        <div class="divide-warnig">
+          <span class="another-sale"></span>
+        </div>
+      </div>
+      <div class="activityone" cid="1"><span class="list-title">本店活动</span><span class="full-minus">满1件6折</span><span class="moresale">更多优惠&#9660</span></div>
+      <div class="activity-details" cid="1">
+        <div class="activityone"><span class="list-title">本店活动</span><span class="full-minus">22-26日六折 到2022-01-27 23:59:59结束</span><span class="moresale">收起&#9650</span></div>
+        <ul class="activitys"><li>满1件 8折</li></ul>
+      </div>
+
+
+    </div>
+    <div class="sale-mount">
+      <div><span>月销量</span><span style="margin-left: -12px;color: red;border-right: 1px solid lightgrey;width: 102px;">731</span></div>
+      <div><span style="margin-left: 52px;">累计评价</span><span style="margin-left: 2px;color: red;">334</span></div>
+
+    </div>
+    <div class="shopping-mount">
+      <span style="padding-left: 10px;padding-right: 28px;line-height: 34px;color: grey";>数量</span>
+      <input type="text" value=1 class="input-number">
+      <button onclick="numberadd()">&#9650</button>
+      <button onclick="numberminus()">&#9660</button>
+      <div class="stock"><span>库存</span><span class="restore">245</span><span style="display: block;float:left;">件</span></div>
+      <div class="divide">
+        <span style="padding-left: 10px;padding-right: 28px;line-height: 34px;color: grey;font-size: 12px;">花呗分期</span>
+        <span><img src="../img/shopping/HB.png">该商品最高可享3期分期免息</span>
+        <div class="icon-list"><span class="icon-warning"></span><span><a href="#">登录</a>后确认是否享有该服务</span></div>
+        <div class="list-divide">
+          <div class="divide-list" period="3">
+            <span>￥</span>
+            <span class="divide-pale" period="3"></span>
+            <span>x3期</span>
+            <div class="other-pale">
+              <span>(</span>
+              <span style="margin-right: 5px;">0</span>
+              <span>手续费)</span>
+            </div>
+          </div>
+          <div class="divide-list" period="6" style="left: 186px;">
+            <span>￥</span>
+            <span class="divide-pale" period="6"></span>
+            <span>x6期</span>
+            <div class="other-pale">
+              <span style="margin-left: 7px;">(含手续费)</span>
+            </div>
+          </div>
+          <div class="divide-list" period="12" style="left: 306px;">
+            <span>￥</span>
+            <span class="divide-pale" period="12"></span>
+            <span>x12期</span>
+            <div class="other-pale">
+              <span style="margin-left: 7px;">(含手续费)</span>
+            </div>
+          </div>
+          <div class="divide-list" period="24" style="left: 67px;top:110px;">
+            <span>￥</span>
+            <span class="divide-pale" period="24"></span>
+            <span>x24期</span>
+            <div class="other-pale">
+              <span style="margin-left: 7px;">(含手续费)</span>
+            </div>
+          </div>
+        </div>
+        <div class="button-buy">
+          <button class="paying">立即购买</button>
+          <div class="shopping-cart">
+            <button class="joinCart"><span class="glyphicon glyphicon-shopping-cart" style="width: 100px;line-height: 8px;margin-left: 48px;" pid="12">加入购物车</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="service-promise">
+        <span style="padding-left: 10px;padding-right: 18px;line-height: 34px;color: grey";>服务承诺</span>
+        <span><a href="#">送货入户</a></span>
+        <span><a href="#">正品保证</a></span>
+        <span><a href="#">七天无理由退换</a></span>
+      </div>
+
+
+    </div>
+
+
+  </div>
+  <div class="shopping-recommend">
+    <span style="position:absolute;top:-11px;left: 85px;background-color:#fff;color: grey;">看了又看</span>
+    <div id="side-banner" class="carousel slide carousel-vertical" data-ride="carousel">
+      <!--<ol class="carousel-indicators">
+          <li data-toggle="#side-banner" data-slide-to="0" class="active"></li>
+          <li data-toggle="#side-banner" data-slide-to="1"></li>
+          <li data-toggle="#side-banner" data-slide-to="2"></li>
+      </ol>-->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <a href="#"><img src="../img/shopping/sofa/PL1.jpg" alt=""></a>
+          <a href="#"><img src="../img/shopping/sofa/QY1.jpg" alt=""></a>
+          <a href="#"><img src="../img/shopping/sofa/SF1.jpg" alt=""></a>
+        </div>
+        <div class="item">
+          <a href="#"><img src="../img/shopping/sofa/SF2.jpg" alt=""></a>
+          <a href="#"><img src="../img/shopping/sofa/SF3.jpg" alt=""></a>
+          <a href="#"><img src="../img/shopping/sofa/SF10.jpg" alt=""></a>
+        </div>
+        <div class="item">
+          <a href="#"><img src="../img/shopping/sofa/SF9.jpg" alt=""></a>
+          <a href="#"><img src="../img/shopping/sofa/SF7.jpg" alt=""></a>
+          <a href="#"><img src="../img/shopping/sofa/SF6.jpg" alt=""></a>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#side-banner" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a class="right carousel-control" href="#side-banner" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div>
+
+  </div>
+  <div class="smallimg">
+    <img src="../img/shopping/sofa/GJ1.jpg" class="smallimglist" bigimgsrc="../img/shopping/sofa/GJ1.jpg">
+    <img src="../img/shopping/sofa/SF2.jpg" class="smallimglist" bigimgsrc="../img/shopping/sofa/SF2.jpg">
+    <img src="../img/shopping/sofa/SF3.jpg" class="smallimglist" bigimgsrc="../img/shopping/sofa/SF3.jpg">
+    <img src="../img/shopping/sofa/SF4.jpg" class="smallimglist" bigimgsrc="../img/shopping/sofa/SF4.jpg">
+    <img src="../img/shopping/sofa/SF6.jpg" class="smallimglist" bigimgsrc="../img/shopping/sofa/SF6.jpg">
+  </div>
+  <div class="shopping-buttom">
+    <img src="../img/shopping/JX.jpeg">
+    <div class="bottom-content">
+      <div class="content-title">
+        <span class="shopping-detalis shopping-hover">商品详情</span>
+        <a href="#"class="triangle"></a>
+        <div class="pj">
+          <span>累计评价</span>
+          <span class="pj-number"></span>
+          <a href="#"class="triangle2"></a>
+        </div>
+
+      </div>
+      <div class="details-shopping">
+        <div class="canshu">
+          <span style="padding-left: 22px;float: none;padding-top: 20px;padding-bottom: 40px;">品牌名称：KUKa/顾家家居</span>
+          <span style="padding-left: 22px;float: none;padding-bottom: 30px;">产品参数：</span>
+          <span style="padding-left: 22px;">品牌: KUKa/顾家家居</span>
+          <span>型号: 1083</span>
+          <span>风格: 现代简约</span>
+          <span style="padding-left: 22px;">颜色分类: 【抢春节后首批发货】【摩...</span>
+          <span>填充物: 海绵</span>
+          <span>是否可定制: 否</span>
+          <span style="padding-left: 22px;">沙发组合形式: 其他</span>
+          <span>适用对象: 成人</span>
+          <span>是否带储物空间: 是</span>
+          <span style="padding-left: 22px;">皮革材质: 头层牛皮</span>
+          <span>产地: 浙江省</span>
+          <span>地市: 杭州市</span>
+          <span style="padding-left: 22px;">区县: 江干区</span>
+          <span>是否组装: 是</span>
+          <span>包装体积: 2</span>
+          <span style="padding-left: 22px;">是否可预售: 是</span>
+          <span>款式定位: 经济型</span>
+          <span>皮革饰面范围: 接触面皮</span>
+        </div>
+        <img src="../img/shopping/FW.png" style="margin-top: 10px;">
+        <img src="../img/shopping/sofa/ZS1.jpg">
+        <img src="../img/shopping/sofa/ZS2.jpg">
+        <img src="../img/shopping/sofa/ZS3.jpg">
+        <img src="../img/shopping/sofa/ZS4.jpg">
+        <img src="../img/shopping/sofa/ZS5.jpg">
+        <img src="../img/shopping/sofa/ZS6.jpg">
+        <img src="../img/shopping/sofa/ZS7.jpg">
+      </div>
+
+
+      <div class="pj-content" style="display: none">
+        <div class="pj-contents">
+          <span>超级好看的绿色 没有色差 跟我想象的一样 坐感很舒适 物流师傅很负责 服务态度非常好好 大品牌确实不一样 服务感受非常好</span>
+          <span>2022-01-19</span>
+          <span>奶***饭</span>
+          <span>（匿名）</span>
+        </div>
+        <div class="pj-contents">
+          <span>大气，颜色喜欢，坐感舒适！很不错的！！</span>
+          <span>2021-1-18</span>
+          <span>轻***5</span>
+          <span>（匿名）</span>
+        </div>
+        <div class="pj-contents">
+          <span>物流速度很快，沙发坐起来弹性很好，很舒服。</span>
+          <span>2021-1-13</span>
+          <span>m***e</span>
+          <span>（匿名）</span>
+        </div>
+        <div class="pj-contents">
+          <span>挺好看的，坐上去很舒服，就是物流有点慢，其他没毛病</span>
+          <span>2021-1-12</span>
+          <span>Z***D</span>
+          <span>（匿名）</span>
+        </div>
+        <div class="pj-contents">
+          <span>感觉还可以吧，味道的话是有些 多通风就好了</span>
+          <span>2021-1-10</span>
+          <span>l***n</span>
+          <span>（匿名）</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="img4load hidden" ></div>
+</div>
+<div style="clear:both"></div>
+</div>
+<footer>
+  <div class="foot1">
+    <div class="foot1-one"><a href="#"><img src="../img/site/ensure.png"></a>
+
+    </div>
+
+  </div>
+  <div class="foot2">
+        <span>购物指南
+        <ul>
+            <li><a href="#">免费注册</a></li>
+            <li><a href="#">开通支付宝</a></li>
+            <li><a href="#">支付宝充值</a></li>
+            </ul>
+        </span>
+    <span>天猫保障
+        <ul>
+            <li><a href="#">发票保障</a></li>
+            <li><a href="#">售后规则</a></li>
+            <li><a href="#">缺货赔付</a></li>
+            </ul>
+        </span>
+    <span>支付方式
+            <ul>
+                <li><a href="#">快捷支付</a></li>
+                <li><a href="#">信用卡</a></li>
+                <li><a href="#">蚂蚁花呗</a></li>
+                <li><a href="#">货到付款</a></li>
+                </ul>
+        </span>
+    <span>商家服务
+        <ul>
+            <li><a href="#">商家入驻</a></li>
+            <li><a href="#">商家中心</a></li>
+            <li><a href="#">天猫智库</a></li>
+            <li><a href="#">天猫规则</a></li>
+            <li><a href="#">物流服务</a></li>
+            <li><a href="#">喵言喵语</a></li>
+            <li><a href="#">运营服务</a></li>
+            </ul>
+        </span>
+    <span style="margin: 0;">手机天猫
+            <a href="#"><img src="../img/site/ma.png"></a>
+        </span>
+  </div>
+  <div style="width:1100px;margin: 0 auto;">
+    <img src="../img/site/cateye.png">
+  </div>
+
+  <div class="foot3">
+    <div class="foot3-one">
+      <a href="#">关于天猫</a>
+      <a href="#">商家服务大厅</a>
+      <a href="#">开放平台</a>
+      <a href="#">诚聘英才</a>
+      <a href="#">联系我们</a>
+      <a href="#">网站合作</a>
+      <a href="#">法律声明</a>
+      <a href="#">隐私权政策</a>
+      <a href="#">知识产权</a>
+      <a href="#">廉正举报</a>
+      <a href="#">不当竞争举报</a>
+    </div>
+    <div class="foot3-two">
+      <a href="#" style="padding-left: 0;">阿里巴巴集团</a>
+      <a href="#">淘宝网</a>
+      <a href="#">天猫</a>
+      <a href="#">聚划算</a>
+      <a href="#">全球速卖通</a>
+      <a href="#">阿里巴巴国际交易市场</a>
+      <a href="#">1688</a>
+      <a href="#">阿里妈妈</a>
+      <a href="#">飞猪</a>
+      <a href="#">阿里云计算</a>
+      <a href="#">AliOS</a>
+      <a href="#">阿里通信</a>
+      <a href="#">万网</a>
+      <a href="#">高德</a>
+      <a href="#">UC</a>
+      <a href="#">友盟</a>
+      <a href="#">虾米</a>
+      <a href="#">钉钉</a>
+      <a href="#">支付宝</a>
+      <a href="#" style="border-right: none;">阿里安全</a>
+    </div>
+    <div class="foot3-three">
+      <a href="#">增值电信业务经营许可证：浙B2-20110446</a>
+      <span>市场名称登记证：工商网市字3301004119号</span>
+      <span>出版物网络交易平台服务经营备案证： 新出发浙备字第2019002号</span>
+    </div>
+    <div class="foot3-four">
+      <span style="padding-right: 70px;">互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span>
+      <span>互联网药品信息服务资质证书编号：<a href="#">浙-（经营性）-2017-0005</a></span>
+      <a href="#"><img src="../img/site/beian.png">浙公网安备 33010002000120号</a>
+    </div>
+    <div class="foot3-five">
+      <span>医疗器械网络交易服务第三方平台备案：（浙）网械平台备字[2018]第00002号</span>
+    </div>
+    <div class="foot3-six">
+      <span style="padding-right: 70px;">浙江省网络食品销售第三方平台提供者备案：浙网食A33010002</span>
+      <a href="#">12318举报</a>
+      <a href="#">浙B2-20110446-1</a>
+    </div>
+    <div class="foot3-seven">
+      <span>&copy2003-现在 TMALL.COM 版权所有</span>
+    </div>
+  </div>
+  <div class="foot4">
+
+  </div>
+
+</footer>
+</body>
+<script>
+  details();
+  topshow();
+</script>
+</html>

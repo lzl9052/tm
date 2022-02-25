@@ -1,0 +1,139 @@
+.settle-address{
+    height: 528px;
+}
+.settle-address span{
+    display: block;
+}
+.settle-address .address-left span{
+    margin-left: 41px;
+    margin-top: 15px;
+}
+.address-left, .address-right{
+    float: left;
+    width: 160px;
+}
+.address-right input{
+    margin-top: 11px;
+    width: 251px;
+    outline: none;
+}
+.title-left{
+    float: left;
+    width: 709px;
+    border-bottom: 4px solid lightskyblue;
+}
+.title-right{
+    float: right;
+    width: 480px;
+}
+.title-right span{
+    float: left;
+    margin-left: 1px;
+    margin-right: 1px;
+    /*width: 93px;*/
+    border-bottom: 4px solid lightskyblue;
+}
+.content-left{
+    float: left;
+    position: relative;
+}
+.content-left span{
+    float: left;
+}
+.content-right{
+    float: right;
+    width: 480px;
+    margin-top: 42px;
+}
+.content-right span{
+    float: left;
+}
+.settle-content-title{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.content-left .service-promise-list{
+    left: 121px;
+    top:52px;
+    position: absolute;
+}
+.settle-title{
+    float: left;
+    width: 1190px;
+}
+.settle-content{
+    float: left;
+    width: 1190px;
+}
+.select-yf{
+    background-color: #fff;
+    border: 1px solid black;
+}
+.settle-bottom{
+    /*height: 42px;*/
+    width: 1190px;
+    float: left;
+    border-top: 2px solid lightskyblue;
+    background-color: #0040ff17;
+}
+.bottom-left{
+    float: left;
+    margin-left: 20px;
+}
+.bottom-left span{
+    float: left;
+}
+.bottom-right{
+    float: right;
+    margin-right: 20px;
+}
+.bottom-right span{
+    float: left;
+}
+.bottom-left, .bottom-right{
+    margin-top: 10px;
+}
+.settle-bottom{
+    font-size: 13px;
+}
+.pay-true{
+    float: right;
+    margin-top: 25px;
+    margin-right: 27px;
+}
+.pay-true span{
+    float: left;
+}
+.pay-true span:last-child{
+    color: red;
+    font-size: 24px;
+    margin-top: -8px;
+}
+.button-tj{
+    float: right;
+    width: 150px;
+    height: 35px;
+    position: absolute;
+    bottom:8px;
+    right: 10px;
+    background-color: #c40000;
+    color: white;
+    border: 1px solid transparent;
+}
+.shopping-main a{
+    color: black;
+}
+.shopping-main a:hover{
+    color: red;
+
+}
+.bottom-input{
+    width: 250px;
+    height: 60px;
+    resize: none;
+    border: 1px solid orange;
+    outline: none;
+}
+.leaveMessage{
+    display: none;
+}
