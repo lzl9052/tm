@@ -158,8 +158,8 @@ nav .dhlcontent .publicdhl-right .contact{
 }
 nav .dhlcontent .publicdhl-right .contact .contacts li{
     float: left;
-    width: 40px;
-    margin: -2px 15px 8px 13px;
+    width: 63px;
+    margin: -2px 0 8px 0;
     /*margin-right: 0;*/
 }
 
@@ -176,7 +176,7 @@ nav .dhlcontent .publicdhl-right .contact .help{
 }
 .contact .contacts .sz-title{
     float: left;
-    padding-left: 13px;
+    /*padding-left: 13px;*/
     padding-top: 9px;
     font-weight: bold;
     font-size: 11px;
