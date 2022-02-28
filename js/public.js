@@ -1,4 +1,4 @@
-function topshow() {
+$(function (){
     $('.tb,.tbb').mouseover(function () {
         $('.tb').addClass('shopping-listshow');
         $('.tbb').addClass('tb2');
@@ -31,7 +31,4 @@ function topshow() {
         $('.sz').removeClass('shopping-listshow');
         $('.contact').removeClass('tb2');
     });
-
-
-};
-
+});

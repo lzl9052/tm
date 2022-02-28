@@ -1,4 +1,4 @@
-function details(){
+$(function (){
     $('.pj').click(function (){
         $('.pj-content').show();
         $('.details-shopping').hide();
@@ -133,7 +133,7 @@ function details(){
             });
         }
     );
-}
+});
 //数量增加
 function numberadd(){
     var  value=$('.input-number').val();

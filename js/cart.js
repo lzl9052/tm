@@ -50,7 +50,7 @@ function syncPrice(pid,num,price){
     $(".shopping-price[pid="+pid+"]").html(shoppingprice);
     calcSumPriceAndNumber();
 }
-function cart(){
+$(function (){
     //每个单独的商品点击之后，没选中的变为选中，选中的变为没选中，选中为selectit=‘selsctit’，未选中为selectit=‘false’
     $(".selected-one").click(function(){
         var selectit = $(this).attr("selectit")
@@ -140,4 +140,4 @@ function cart(){
         };
 
     });
-}
+})

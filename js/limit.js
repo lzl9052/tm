@@ -1,4 +1,4 @@
-function limitprice(){
+$(function (){
     $('input.sortBarPrice').keyup(function (){
         var num=$(this).val();
         if(num.length==0){
@@ -27,4 +27,4 @@ function limitprice(){
             });
         }
     });
-}
+});

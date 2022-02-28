@@ -1,4 +1,4 @@
-function ordercontrol(){
+$(function (){
     $('.order-title span').click(function (){
         $(this).addClass('order-title-hover');
         $(this).siblings().removeClass('order-title-hover');
@@ -42,4 +42,4 @@ function ordercontrol(){
             }
         })
     });
-}
+});

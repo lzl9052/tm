@@ -1,4 +1,4 @@
-function settle(){
+$(function (){
     $('.bottom-ly').click(function (){
         $('.bottom-ly').hide();
         $('.leaveMessage').show();
@@ -22,4 +22,4 @@ function settle(){
             this.value=this.value.slice(0,200);
         }
     })
-}
+});
