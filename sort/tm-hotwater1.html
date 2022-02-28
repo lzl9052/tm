@@ -6,8 +6,9 @@
     <link rel="icon" href="img/shorticon.png">
     <link rel="stylesheet" href="../css/public.css">
     <link rel="stylesheet" href="../css/television.css">
-    <script src="../js/public.js"type="text/javascript"charset="utf-8"></script>
-    <script src="../js/details.js"type="text/javascript"charset="utf-8"></script>
+    <script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/details.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/bigimg.js"></script>
     <script src="../jquery.min.js"></script>
     <link href="../3.3.6/bootstrap.min.css" rel="stylesheet">
     <script src="../bootstrap.min.js"></script>
@@ -40,7 +41,8 @@
                     <li><a href="#">收藏的店铺</a></li>
                 </ul>
 
-                <span class="glyphicon glyphicon-phone redColor phone-button" style="border-left: 1px solid #cccccc;padding-left: 12px;"></span>
+                <span class="glyphicon glyphicon-phone redColor phone-button"
+                      style="border-left: 1px solid #cccccc;padding-left: 12px;"></span>
                 <a href="#" class="phone-edition">手机版</a>
                 <img src="../img/site/phone.png" class="phone">
                 <a href="#">淘宝网</a>
@@ -49,8 +51,8 @@
                 <div class="contact">
                     <ul class="contacts">
                         <span class="sz-title">商家:</span><br/><br/>
-                        <li style="margin-top: 0;"><a href="#" >商家中心</a></li>
-                        <li style="margin-top: 0;"><a href="#" >天猫规则</a></li>
+                        <li style="margin-top: 0;"><a href="#">商家中心</a></li>
+                        <li style="margin-top: 0;"><a href="#">天猫规则</a></li>
                         <li><a href="#">商家入驻</a></li>
                         <li><a href="#">运营服务</a></li>
                         <li><a href="#">商家品控</a></li>
@@ -60,8 +62,8 @@
                     </ul>
                     <ul class="contacts">
                         <span class="sz-title help">帮助:</span><br/><br/>
-                        <li style="margin-top: 0;width: 100px;"><a href="#" >商家服务大厅</a></li>
-                        <li style="margin-top: 0;"><a href="#" >问商友</a></li>
+                        <li style="margin-top: 0;width: 100px;"><a href="#">商家服务大厅</a></li>
+                        <li style="margin-top: 0;"><a href="#">问商友</a></li>
                     </ul>
                     <br>
                 </div>
@@ -112,7 +114,7 @@
         <span class="ju">聚</span>
         <div class="activity">
             <span style="padding-left: 10px;padding-right: 28px;line-height: 34px;color: grey">价格</span>
-            <span style="color: red;font-size: 30px;"price="1299" class="sale-price">￥1299</span>
+            <span style="color: red;font-size: 30px;" price="1299" class="sale-price">￥1299</span>
             <div class="divide-sale">
                 <span class="list-title" style="float:left;font-size: 12px;">分期价</span>
                 <div class="divide-price">
@@ -128,19 +130,21 @@
             </div>
 
 
-
         </div>
         <div class="sale-mount">
-            <div><span>月销量</span><span style="margin-left: -12px;color: red;border-right: 1px solid lightgrey;width: 102px;">931</span></div>
+            <div><span>月销量</span><span
+                    style="margin-left: -12px;color: red;border-right: 1px solid lightgrey;width: 102px;">931</span>
+            </div>
             <div><span style="margin-left: 52px;">累计评价</span><span style="margin-left: 2px;color: red;">234</span></div>
 
         </div>
         <div class="shopping-mount">
-            <span style="padding-left: 10px;padding-right: 28px;line-height: 34px;color: grey";>数量</span>
+            <span style="padding-left: 10px;padding-right: 28px;line-height: 34px;color: grey" ;>数量</span>
             <input type="text" value=1 class="input-number">
             <button onclick="numberadd()">&#9650</button>
             <button onclick="numberminus()">&#9660</button>
-            <div class="stock"><span>库存</span><span class="restore">100</span><span style="display: block;float:left;">件</span></div>
+            <div class="stock"><span>库存</span><span class="restore">100</span><span
+                    style="display: block;float:left;">件</span></div>
             <div class="divide">
                 <span style="padding-left: 10px;padding-right: 28px;line-height: 34px;color: grey;font-size: 12px;">花呗分期</span>
                 <span><img src="../img/shopping/HB.png">该商品最高可享3期分期免息</span>
@@ -184,12 +188,14 @@
                 <div class="button-buy">
                     <button class="paying">立即购买</button>
                     <div class="shopping-cart">
-                        <button class="joinCart"><span class="glyphicon glyphicon-shopping-cart" style="width: 100px;line-height: 8px;margin-left: 48px;" pid="11">加入购物车</span></button>
+                        <button class="joinCart"><span class="glyphicon glyphicon-shopping-cart"
+                                                       style="width: 100px;line-height: 8px;margin-left: 48px;"
+                                                       pid="11">加入购物车</span></button>
                     </div>
                 </div>
             </div>
             <div class="service-promise">
-                <span style="padding-left: 10px;padding-right: 18px;line-height: 34px;color: grey";>服务承诺</span>
+                <span style="padding-left: 10px;padding-right: 18px;line-height: 34px;color: grey" ;>服务承诺</span>
                 <span><a href="#">送货入户</a></span>
                 <span><a href="#">全国联保</a></span>
                 <span><a href="#">正品保证</a></span>
@@ -248,11 +254,11 @@
         <div class="bottom-content">
             <div class="content-title">
                 <span class="shopping-detalis shopping-hover">商品详情</span>
-                <a href="#"class="triangle"></a>
+                <a href="#" class="triangle"></a>
                 <div class="pj">
                     <span>累计评价</span>
                     <span class="pj-number"></span>
-                    <a href="#"class="triangle2"></a>
+                    <a href="#" class="triangle2"></a>
                 </div>
 
             </div>
@@ -317,7 +323,7 @@
             </div>
         </div>
     </div>
-    <div class="img4load hidden" ></div>
+    <div class="img4load hidden"></div>
 </div>
 <div style="clear:both"></div>
 </div>
