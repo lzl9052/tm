@@ -5,13 +5,10 @@
     <title>天猫</title>
     <link rel="icon" href="../img/shorticon.png">
     <link rel="stylesheet" href="../css/public.css">
-    <link rel="stylesheet" href="../css/settle.css">
-    <link rel="stylesheet" href="../css/television.css">
-    <link rel="stylesheet" href="../css/order.css">
+    <link rel="stylesheet" href="../css/register.css">
     <script src="../jquery.min.js"></script>
-    <script src="../js/order.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
-    <script src="../js/settle.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/cart.js" type="text/javascript" charset="utf-8"></script>
     <link href="../3.3.6/bootstrap.min.css" rel="stylesheet">
     <script src="../bootstrap.min.js"></script>
     <script src="../js/Vue/vue.min.js"></script>
@@ -97,53 +94,25 @@
 
     </div>
 </div>
-<div class="success-sh">
-    <div class="success-sh-title">
-        <img src="../img/site/comformPayFlow.png" alt="" style="margin-left: 153px;">
-        <span>2022-02-10 17:30:11</span>
-        <span>2022-02-10 17:49:12</span>
-        <span>2022-02-12 17:59:12</span>
-        <h4 style="float:left;width: 1000px;margin-top: 40px;">我已收到货，同意支付宝付款</h4>
-    </div>
-    <span style="font-size: 19px;">订单信息</span>
-    <div class="success-sh-content">
-
-        <div class="sh-content-title">
-            <span style="width: 306px;margin-left: 305px;">宝贝</span>
-            <span>单价</span>
-            <span>数量</span>
-            <span>商品总价</span>
-            <span>运费</span>
+<form class="register-form" method="post">
+    <div class="register-body">
+        <div class="error-warning"></div>
+        <div class="register-left">
+            <span style="font-size: 18px;">设置会员名</span>
+            <span>登录名</span>
+            <span style="font-size: 18px;">设置登陆密码</span>
+            <span style="float:left;width: 127px;">登陆密码</span>
+            <span>密码确认</span>
         </div>
-        <div class="sh-contents">
-            <img src="../img/shopping/television/XM9.jpg" alt="">
-            <a href="tm-television1.html"><span style="margin-left: 20px;margin-right: 347px;">小米EA65金属全面屏 65英寸4K超高清</span></a>
-            <span style="margin-right: 99px;">￥3599</span>
-            <span style="margin-right: 108px;">1</span>
-            <span style="margin-right: 80px;font-weight: bold;font-size: 17px;">￥3599</span>
-            <span>快递 ： 0.00</span>
+        <div class="register-right">
+            <input type="text" placeholder="会员名一旦设置成功，无法修改" pid="username">
+            <span style="margin-top: 25px;float:left;">登陆时验证，保护账号信息</span>
+            <input type="password" placeholder="设置您的登录密码" pid="password">
+            <input type="password" placeholder="请再次确认您的登录密码" pid="passwordAgain">
         </div>
+        <button class="btn-danger">提交</button>
     </div>
-    <div class="sfk">
-        <span>实付款：</span>
-        <span style="color: red;">￥3599</span>
-    </div>
-    <div class="order-information">
-        <span>订单编号：</span>
-        <span>202202101730114402577<img src="../img/site/confirmOrderTmall.png" alt=""></span>
-        <span>卖家昵称：</span>
-        <span>天猫商铺<span class="wangwang" style="width: 74px;height: 20px;margin-left: 0;margin-top: 0;"></span></span>
-        <span>收货信息：</span>
-        <span>广西省桂林市</span>
-        <span>成交时间：</span>
-        <span>2022-02-10 17:30:11</span>
-    </div>
-    <div class="qr-pay">
-        <span style="color: red;font-weight: bold;margin-left: 100px;margin-top: 12px;display: block;font-size: 20px;">请收到货后，再确认收货！否则您可能钱货两空！</span>
-        <button class="btn-warning">确认支付</button>
-    </div>
-</div>
-<div class="goBack glyphicon glyphicon-upload"></div>
+</form>
 <footer>
     <div class="foot1">
         <div class="foot1-one"><a href="#"><img src="../img/site/ensure.png"></a>
@@ -257,4 +226,26 @@
 
 </footer>
 </body>
+<script>
+    $('.register-form').submit(function () {
+        if ($('.register-right input[pid=username]').val().length == 0) {
+            $('.error-warning').html('请输入用户名');
+            $('.error-warning').show();
+            return false;
+        }
+        ;
+        if ($('.register-right input[pid=password]').val().length == 0) {
+            $('.error-warning').html('请输入密码');
+            $('.error-warning').show();
+            return false;
+        }
+        ;
+        if ($('.register-right input[pid=passwordAgain]').val().length == 0) {
+            $('.error-warning').html('请输入重复密码');
+            $('.error-warning').show();
+            return false;
+        }
+        return true;
+    })
+</script>
 </html>
