@@ -1,5 +1,49 @@
 body{
     width: 100%;
+    position: relative;
+}
+body .goBack{
+    font-size: 40px;
+    position: fixed!important;
+    right: 50px;
+    bottom: 100px;
+    top: auto!important;
+    display: none;
+    z-index: 999;
+}
+body .elevators{
+    position: fixed!important;
+    top:50px;
+    left: 20px;
+    list-style: none;
+    width: 70px;
+    background-color: white;
+    padding:0;
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+}
+body .elevators li{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+
+/*    border-bottom: 1px solid #cccccc;
+    padding: 0 5px;*/
+    /*border: 1px solid orange;*/
+}
+body .elevators li:first-child{
+    background-color: #ff780f;
+}
+body .elevators li:hover{
+    background-color: #ff780f;
+    text-decoration: none;
+    /*background-color: #ffe4e9;*/
+}
+body .elevators a{
+    text-decoration: none;
+    color: black;
 }
 .main-body{
     background:linear-gradient(to left bottom,#FFC8D1,white);
@@ -180,12 +224,6 @@ nav .dhlcontent .publicdhl-right .contact .help{
     padding-top: 9px;
     font-weight: bold;
     font-size: 11px;
-}
-nav .dhlcontent .publicdhl-right .tb2{
-    display: block!important;
-}
-.sz{
-
 }
 .publicdhl-right img{
     width: 150px;
@@ -508,6 +546,7 @@ footer{
     float: left;
     font-size: 11px;
     color: grey;
+    white-space: nowrap;
 }
 .shopping-contents li span:last-child{
     color: red;
