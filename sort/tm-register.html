@@ -207,26 +207,5 @@
 
 </footer>
 </body>
-<script>
-    $('.register-form').submit(function () {
-        if ($('.register-right input[pid=username]').val().length == 0) {
-            $('.error-warning').html('请输入用户名');
-            $('.error-warning').show();
-            return false;
-        }
-        ;
-        if ($('.register-right input[pid=password]').val().length == 0) {
-            $('.error-warning').html('请输入密码');
-            $('.error-warning').show();
-            return false;
-        }
-        ;
-        if ($('.register-right input[pid=passwordAgain]').val().length == 0) {
-            $('.error-warning').html('请输入重复密码');
-            $('.error-warning').show();
-            return false;
-        }
-        return true;
-    })
-</script>
+
 </html>
