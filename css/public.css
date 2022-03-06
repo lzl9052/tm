@@ -21,7 +21,6 @@ body .elevators{
     padding:0;
     border-radius: 10px;
     overflow: hidden;
-    display: none;
 }
 body .elevators li{
     width: 100%;
