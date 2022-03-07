@@ -19,13 +19,7 @@ $(function (){
         });
     });
     $(window).scroll(function (){
-        if($(document).scrollTop()>300){
-            $('.goBack').show();
-        }else {
-            $('.goBack').hide();
-        }
         toggleElevators();
-
         if(flag){
             $('.shopping-contents-title').each(function (i,ele){
                 if($(document).scrollTop()>=$(ele).offset().top-10){
@@ -37,9 +31,4 @@ $(function (){
         }
     });
 
-    $('.goBack').click(function (){
-        $('body,html').stop().animate({
-            scrollTop:0,
-        });
-    });
 });
