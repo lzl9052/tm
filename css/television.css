@@ -118,6 +118,7 @@
 .shopping-main .productUnit a{
     font-size: 11px;
     white-space: nowrap;
+    display: inline-block;
 }
 .shopping-main .productUnit a:hover{
     color: red;
