@@ -94,7 +94,7 @@
 
     </div>
 </div>
-<form class="register-form" method="post">
+<form class="register-form">
     <div class="register-body">
         <div class="error-warning"></div>
         <div class="register-left">
@@ -105,9 +105,9 @@
             <span>密码确认</span>
         </div>
         <div class="register-right">
-            <input type="text" placeholder="会员名一旦设置成功，无法修改" pid="username">
+            <input type="text" placeholder="会员名一旦设置成功，无法修改" pid="username" name="username">
             <span style="margin-top: 25px;float:left;">登陆时验证，保护账号信息</span>
-            <input type="password" placeholder="设置您的登录密码" pid="password">
+            <input type="password" placeholder="设置您的登录密码" pid="password" name="password">
             <input type="password" placeholder="请再次确认您的登录密码" pid="passwordAgain">
         </div>
         <button class="btn-danger">提交</button>
@@ -226,26 +226,43 @@
 
 </footer>
 </body>
+<script src="../js/layui.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/baseAPI.js" type="text/javascript" charset="utf-8"></script>
 <script>
-    $('.register-form').submit(function () {
+    $('.register-form').submit(function (e) {
         if ($('.register-right input[pid=username]').val().length == 0) {
             $('.error-warning').html('请输入用户名');
             $('.error-warning').show();
             return false;
         }
         ;
-        if ($('.register-right input[pid=password]').val().length == 0) {
-            $('.error-warning').html('请输入密码');
+        if ($('.register-right input[pid=password]').val().length < 6||$('.register-right input[pid=password]').val().length >18) {
+            $('.error-warning').html('请输入6-18位密码');
             $('.error-warning').show();
             return false;
         }
         ;
-        if ($('.register-right input[pid=passwordAgain]').val().length == 0) {
-            $('.error-warning').html('请输入重复密码');
+        if ($('.register-right input[pid=passwordAgain]').val().length < 6||$('.register-right input[pid=passwordAgain]').val().length >18) {
+            $('.error-warning').html('请输入6-18位重复密码');
             $('.error-warning').show();
             return false;
         }
-        return true;
+        if($('.register-right input[pid=password]').val()!==$('.register-right input[pid=passwordAgain]').val()){
+            $('.error-warning').html('请检查前后密码是否一致');
+            $('.error-warning').show();
+            return false;
+        }
+        /*return true;*/
+        e.preventDefault();
+        $.post('/api/reguser',$(this).serialize(),function (res) {
+            // status 为 0 表示获取用户名称成功；否则表示获取用户名称失败！
+            if (res.status === 0) {
+                alert('恭喜您注册成功，请登录！')
+                location.href = './tm-login.html'
+            }else {
+                $('.error-warning').html('用户名已被使用，请更换用户名！');
+            }
+        })
     })
 </script>
 </html>

@@ -13,6 +13,7 @@
     <script src="../js/order.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/settle.js" type="text/javascript" charset="utf-8"></script>
+
     <link href="../3.3.6/bootstrap.min.css" rel="stylesheet">
     <script src="../bootstrap.min.js"></script>
     <script src="../js/Vue/vue.min.js"></script>
@@ -23,10 +24,10 @@
 </div>
 
 <div class="main">
-    <form class="login-form" method="post">
+    <form class="login-form">
         <div class="login-bgc">
             <div class="login-info">
-                <div class="errorMessage">请输入账号密码!</div>
+                <div class="errorMessage">请输入正确的账号密码!</div>
                 <div class="login-select">
                     <span class="login-title under-line" pid="mima">密码登录</span>
                     <span class="login-title" pid="message">短信登录</span>
@@ -34,11 +35,11 @@
                 <div class="login-content">
                     <div class="login-input">
                         <span class="glyphicon glyphicon-user login-img" pid="username"></span>
-                        <input type="text" placeholder="会员名/邮箱/手机号" pid="username">
+                        <input type="text" placeholder="会员名/邮箱/手机号" pid="username" name="username">
                     </div>
                     <div class="login-input">
                         <span class="glyphicon glyphicon-lock login-img" pid="password"></span>
-                        <input type="password" placeholder="请输入登录密码" pid="password">
+                        <input type="password" placeholder="请输入登录密码" pid="password" name="password">
                     </div>
                 </div>
                 <button class="login-button">登录</button>
@@ -165,6 +166,8 @@
 
 </footer>
 </body>
+<script src="../js/layui.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/baseAPI.js" type="text/javascript" charset="utf-8"></script>
 <script>
     $('.login-input input').focus(function () {
         var pid = $(this).attr('pid');
@@ -195,12 +198,23 @@
         $('.login-input input[pid=username]').attr('placeholder', '会员名/邮箱/手机号')
         $('.login-input input[pid=password]').attr('placeholder', '请输入登录密码');
     });
-    $('.login-form').submit(function () {
-        if ($('.login-input input[pid=username]').val().length == 0 || $('.login-input input[pid=password]').val().length == 0) {
+    $('.login-form').submit(function (e) {
+        if ($('.login-input input[pid=username]').val().length == 0 || $('.login-input input[pid=password]').val().length < 6||$('.login-input input[pid=password]').val().length >18) {
             $('.errorMessage').show();
             return false;
         }
-        return true;
+        /*return true;*/
+        e.preventDefault();
+        $.post('/api/login',$(this).serialize(),function (res) {
+            // status 为 0 表示获取用户名称成功；否则表示获取用户名称失败！
+            if (res.status === 0) {
+                location.href = '../index.html';
+                localStorage.setItem('token', res.token)
+            } else {
+                alert('登录失败！')
+            }
+        })
+
     });
     $('.login-input input').keyup(function () {
         $('.errorMessage').hide();

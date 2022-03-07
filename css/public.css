@@ -44,6 +44,9 @@ body .elevators a{
     text-decoration: none;
     color: black;
 }
+.username,.logout{
+    display: none;
+}
 .main-body{
     background:linear-gradient(to left bottom,#FFC8D1,white);
     width: 100%;
