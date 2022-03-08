@@ -1,0 +1,97 @@
+.user-update{
+    width: 1190px;
+    /*background-color: pink;*/
+    margin: 10px auto;
+}
+.user-name{
+    cursor: pointer;
+}
+.user-header{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #ff4401;
+    color: white;
+}
+a:hover{
+    text-decoration: none!important;
+}
+.user-header-main{
+    width: 1190px;
+    margin: 0 auto;
+    position: relative;
+}
+.setting{
+    margin-left: 100px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    height: 50px;
+}
+.setting:hover{
+    color: white;
+    text-decoration: none;
+}
+.user-info{
+    background-color: #fff;
+    width: 188px;
+    position: absolute;
+    left: 122px;
+    top:40px;
+    border: 1px solid #cccccc;
+    text-align: center;
+    display: none;
+    border-radius: 10px;
+}
+.user-info a{
+    color: black;
+}
+.user-info a:hover{
+    color: #01a1ff;
+}
+.user-main{
+    margin: 0 auto;
+    width: 300px;
+    display: none;
+}
+.user-main label{
+    margin-top: 50px;
+}
+.jt{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 205px;
+    top:34px;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    transform: rotate(-45deg);
+    background-color: #fff;
+    z-index: 99;
+    display: none;
+}
+.update{
+    background-color: #ff4401;
+    border: 1px solid #ff4401;
+    border-radius: 10px;
+    margin-left: 65px;
+    margin-top: 20px;
+    width: 100px;
+    color: white;
+}
+.update-pwd{
+    margin: 0 auto;
+    width: 300px;
+    display: none;
+}
+.update-pwd label{
+    margin-top: 50px;
+}
+.userInfo{
+
+    width: 300px;
+
+}
+.userInfo label{
+    margin-top: 30px;
+}

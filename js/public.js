@@ -45,7 +45,9 @@ $(function(){
             $('.username').html(res.data.username)
         }
     })
-
+    $('.username').on('click',function (){
+        location.href='tm-user.html'
+    })
     // 点击按钮退出登录
     $('.logout').on('click', function () {
         localStorage.removeItem('token')

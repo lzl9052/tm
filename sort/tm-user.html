@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>天猫</title>
+    <title>天猫用户界面</title>
     <link rel="icon" href="../img/shorticon.png">
     <link rel="stylesheet" href="../css/public.css">
     <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/user.css">
     <script src="../jquery.min.js"></script>
-    <script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
     <script src="../js/cart.js" type="text/javascript" charset="utf-8"></script>
+
     <link href="../3.3.6/bootstrap.min.css" rel="stylesheet">
     <script src="../bootstrap.min.js"></script>
 </head>
@@ -94,7 +95,7 @@
 
     </div>
 </div>
-<form class="register-form">
+<!--<form class="register-form">
     <div class="register-body">
         <div class="error-warning"></div>
         <div class="register-left">
@@ -112,7 +113,37 @@
         </div>
         <button class="btn-danger">提交</button>
     </div>
-</form>
+</form>-->
+<div class="user-header">
+    <div class="user-header-main">
+        <span>欢迎您,</span>
+        <span class="user-name"></span>
+        <a href="javascript:;" class="setting">账户设置</a>
+        <div class="jt"></div>
+        <div class="user-info">
+            <a href="javascript:;" class="user-info-update">基本信息修改</a>
+            <a href="javascript:;" class="user-pwd-update">密码修改</a>
+        </div>
+    </div>
+
+</div>
+<div class="user-update">
+    <form class="user-main">
+        <label>昵称:</label><input type="text" name="nickname"><br>
+        <label>邮箱:</label><input type="text" name="email"><br>
+        <button class="update" type="submit">提交修改</button>
+    </form>
+    <form class="update-pwd">
+        <label>旧密码:</label><input type="password" name="oldPwd"><br>
+        <label>新密码:</label><input type="password" name="newPwd"><br>
+        <button class="update" type="submit">提交修改</button>
+    </form>
+    <div class="userInfo">
+        <label>用户名:</label><span class="user-name"></span><br>
+        <label>昵称:</label><span class="user-nickname"></span><br>
+        <label>邮箱:</label><span class="user-email"></span>
+    </div>
+</div>
 <footer>
     <div class="foot1">
         <div class="foot1-one"><a href="#"><img src="../img/site/ensure.png"></a>
@@ -228,41 +259,7 @@
 </body>
 <script src="../js/layui.js" type="text/javascript" charset="utf-8"></script>
 <script src="../js/baseAPI.js" type="text/javascript" charset="utf-8"></script>
-<script>
-    $('.register-form').submit(function (e) {
-        if ($('.register-right input[pid=username]').val().length == 0) {
-            $('.error-warning').html('请输入用户名');
-            $('.error-warning').show();
-            return false;
-        }
-        ;
-        if ($('.register-right input[pid=password]').val().length < 6||$('.register-right input[pid=password]').val().length >18) {
-            $('.error-warning').html('请输入6-18位密码');
-            $('.error-warning').show();
-            return false;
-        }
-        ;
-        if ($('.register-right input[pid=passwordAgain]').val().length < 6||$('.register-right input[pid=passwordAgain]').val().length >18) {
-            $('.error-warning').html('请输入6-18位重复密码');
-            $('.error-warning').show();
-            return false;
-        }
-        if($('.register-right input[pid=password]').val()!==$('.register-right input[pid=passwordAgain]').val()){
-            $('.error-warning').html('请检查前后密码是否一致');
-            $('.error-warning').show();
-            return false;
-        }
-        /*return true;*/
-        e.preventDefault();
-        $.post('/api/reguser',$(this).serialize(),function (res) {
-            // status 为 0 表示获取用户名称成功；否则表示获取用户名称失败！
-            if (res.status === 0) {
-                alert('恭喜您注册成功，请登录！')
-                location.href = './tm-login.html'
-            }else {
-                $('.error-warning').html('用户名已被使用，请更换用户名！');
-            }
-        })
-    })
-</script>
+<script src="../js/setting.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+
 </html>

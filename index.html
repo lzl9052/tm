@@ -1688,7 +1688,9 @@ FunLazy({
             if (v == 1)
                 $(this).css("color", "#87CEFA");
         });
-
+        $('.username').on('click',function (){
+            location.href='./sort/tm-user.html'
+        })
         // 点击按钮退出登录
         $('.logout').on('click', function () {
             localStorage.removeItem('token')
