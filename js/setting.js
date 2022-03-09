@@ -34,8 +34,8 @@ $(function (){
             $('.user-nickname').html(res.data.nickname);
             $('.user-email').html(res.data.email);
         }else {
-            alert('请您先登录账号！')
-            location.href='tm-login.html'
+            alert('请您先登录账号！');
+            location.href='tm-login.html';
         }
     })
     $('.user-main').submit(function (e){
@@ -43,8 +43,8 @@ $(function (){
         $.post('/my/userinfo',$(this).serialize(),function (res) {
             // status 为 0 表示获取用户名称成功；否则表示获取用户名称失败！
             if (res.status === 0) {
-                alert('恭喜您更新信息成功!')
-                location.href = 'tm-user.html'
+                alert('恭喜您更新信息成功!');
+                location.href = 'tm-user.html';
             }else {
                 alert('更新信息失败！请重试！');
             }
@@ -55,8 +55,9 @@ $(function (){
         $.post('/my/updatepwd',$(this).serialize(),function (res) {
             // status 为 0 表示获取用户名称成功；否则表示获取用户名称失败！
             if (res.status === 0) {
-                alert('恭喜您更换密码成功!请重新登录！')
-                location.href = 'tm-login.html'
+                alert('恭喜您更换密码成功!请重新登录！');
+                localStorage.removeItem('token');
+                location.href = 'tm-login.html';
             }else {
                 alert('更换密码失败！请重试！');
             }
